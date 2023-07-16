@@ -4,6 +4,7 @@
 :root {
   --main-white: #f3f3f3;
   --main-blue: #6869a3;
+  --form-deep-blue: rgba(45, 44, 73, 0.8);
 }
 
 * {
@@ -64,4 +65,27 @@ body {
   flex-direction: column;
   align-items: center;
   margin-top: 2rem;
+}
+
+#survey-form {
+  background-color: var(--form-deep-blue);
+  padding: 2.5rem;
+  width: 78vw;
+}
+
+.form-item {
+  display: flex;
+  flex-direction: column;
+  padding: 0.25rem;
+}
+
+#survey-form label,
+#role-form p {
+  font-size: 1.125rem;
+}
+
+#survey-form input,
+#dropdown {
+  font-size: 1rem;
+  font-family: 'Poppins', sans-serif;
 }
