@@ -80,7 +80,10 @@ body {
 }
 
 #survey-form label,
-#role-form p {
+#role-form p,
+#recommend,
+#favorite-form p,
+#prefer-form p {
   font-size: 1.125rem;
 }
 
@@ -88,4 +91,12 @@ body {
 #dropdown {
   font-size: 1rem;
   font-family: 'Poppins', sans-serif;
+}
+
+.tips {
+  font-size: 0.9rem;
+}
+
+#recommend {
+  padding: 0.25rem;
 }
