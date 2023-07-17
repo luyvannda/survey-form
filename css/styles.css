@@ -85,6 +85,7 @@ body {
   padding: 0.5rem 0.93rem;
   border: 1px solid var(--main-white);
   border-radius: 4px;
+  margin-top: 0.25rem;
 }
 
 #survey-form label,
@@ -98,7 +99,8 @@ body {
 
 #survey-form input,
 #dropdown,
-#comments {
+#comments,
+.submit-button {
   font-size: 1.25rem;
   font-family: 'Poppins', sans-serif;
 }
@@ -130,4 +132,15 @@ body {
   border: 1px solid var(--main-white);
   border-radius: 4px;
   padding: 0.81rem;
+  margin-top: 0.5rem;
+}
+
+.submit-button {
+  background-color: rgb(55, 175, 101);
+  border: 1px solid rgb(55, 175, 101);
+  border-radius: 4px;
+  color: var(--main-white);
+  padding: 0.93rem;
+  cursor: pointer;
+  margin-top: 1rem;
 }
