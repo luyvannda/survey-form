@@ -48,13 +48,13 @@ body {
 }
 
 #title {
-  font-size: 2rem;
+  font-size: 2.5rem;
   text-align: center;
   margin-top: 2rem;
 }
 
 #description {
-  font-size: 1.125rem;
+  font-size: 1.40rem;
   text-align: center;
 }
 
@@ -70,33 +70,64 @@ body {
 #survey-form {
   background-color: var(--form-deep-blue);
   padding: 2.5rem;
-  width: 78vw;
+  width: 65vw;
 }
 
 .form-item {
   display: flex;
   flex-direction: column;
   padding: 0.25rem;
+  justify-content: center;
+  margin-bottom: 0.8rem;
+}
+
+.box {
+  padding: 0.5rem 0.93rem;
+  border: 1px solid var(--main-white);
+  border-radius: 4px;
 }
 
 #survey-form label,
 #role-form p,
 #recommend,
 #favorite-form p,
-#prefer-form p {
-  font-size: 1.125rem;
+#prefer-form p,
+#comments-box p {
+  font-size: 1.40rem;
 }
 
 #survey-form input,
-#dropdown {
-  font-size: 1rem;
+#dropdown,
+#comments {
+  font-size: 1.25rem;
   font-family: 'Poppins', sans-serif;
 }
 
 .tips {
-  font-size: 0.9rem;
+  font-size: 1.125rem;
 }
 
 #recommend {
   padding: 0.25rem;
+}
+
+.recommend-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.check-box,
+.radio {
+  width: 1.2rem;
+  height: 1.2rem;
+  margin-right: 0.5rem;
+}
+
+#comments {
+  height: 7.5rem;
+  border: 1px solid var(--main-white);
+  border-radius: 4px;
+  padding: 0.81rem;
 }

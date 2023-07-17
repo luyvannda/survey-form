@@ -22,14 +22,14 @@
       <div class="form-item">
         <label id="name-label">Name</label>
 
-        <input id="name" name="name" type="text" placeholder="Enter your name"
-          required></input>
+        <input class="box" id="name" name="name" type="text"
+          placeholder="Enter your name" required></input>
       </div>
 
       <div class="form-item">
         <label id="email-label">Email</label>
 
-        <input id="email" name="email" type="email"
+        <input class="box" id="email" name="email" type="email"
           placeholder="Enter your Email" required></input>
       </div>
 
@@ -37,14 +37,14 @@
         <label id="number-label">Age <span class="tips">(optional)
           </span></label>
 
-        <input id="number" name="age" type="number" min="18" max="65"
-          placeholder="Age"></input>
+        <input class="box" id="number" name="age" type="number" min="18"
+          max="65" placeholder="Age"></input>
 
       </div>
 
       <div class="form-item" id="role-form">
         <p>Which option best describes your current role</p>
-        <select id="dropdown" name="role">
+        <select class="box" id="dropdown" name="role">
           <option disabled selected value> Select current role</option>
           <option value="option1">Student</option>
           <option value="option2">Full Time Job</option>
@@ -56,17 +56,27 @@
 
       <div id="recommend">
         <p>Would you recommend freeCodeCamp to a friend?</p>
-        <input type="radio" name="recommend" value="definitely"
-          checked>Definitely</input>
-        <br>
-        <input type="radio" name="recommend" value="maybe">Maybe</input>
-        <br>
-        <input type="radio" name="recommend" value="not sure">Not sure</input>
+
+        <div class="recommend-container">
+          <label>
+            <input class="radio" type="radio" name="recommend"
+              value="definitely" checked>Definitely</input>
+          </label>
+          <label>
+            <input class="radio" type="radio" name="recommend"
+              value="maybe">Maybe</input>
+          </label>
+          <label>
+            <input class="radio" type="radio" name="recommend"
+              value="not sure">Not
+            sure</input>
+          </label>
+        </div>
       </div>
 
       <div class="form-item" id="favorite-form">
         <p>What is your favorite feature of freeCodeCamp?</p>
-        <select id="dropdown" name="role">
+        <select class="box" id="dropdown" name="role">
           <option disabled selected value> Select an option</option>
           <option value="option1">Challenges</option>
           <option value="option2">Projects</option>
@@ -82,34 +92,34 @@
 
         <label><input value="front-end-projects" type="checkbox"
             class="check-box">Front-end Projects</label>
-        <br>
+
         <label><input value="back-end-projects" type="checkbox"
             class="check-box">Back-end Projects</label>
-        <br>
+
         <label><input value="data-visualization" type="checkbox"
             class="check-box">Data Visualization</label>
-        <br>
+
         <label><input value="challenges" type="checkbox"
             class="check-box">Challenges</label>
-        <br>
+
         <label><input value="open-source-community" type="checkbox"
             class="check-box">Open Source Community</label>
-        <br>
+
         <label><input value="gitter-help-rooms" type="checkbox"
             class="check-box">Gitter help rooms</label>
-        <br>
+
         <label><input value="videos" type="checkbox"
             class="check-box">Videos</label>
-        <br>
+
         <label><input value="city-meetups" type="checkbox"
             class="check-box">City Meetups</label>
-        <br>
+
         <label><input value="wiki" type="checkbox"
             class="check-box">Wiki</label>
-        <br>
+
         <label><input value="forum" type="checkbox"
             class="check-box">Forum</label>
-        <br>
+
         <label><input value="additional-courses" type="checkbox"
             class="check-box">Additional Courses</label>
       </div>
