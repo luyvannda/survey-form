@@ -23,6 +23,8 @@ html {
   font-size: 16px;
 }
 
+
+
 body::before {
   content: '';
   position: fixed;
@@ -48,13 +50,13 @@ body {
 }
 
 #title {
-  font-size: 2.5rem;
+  font-size: calc(2.5rem + (100vw - 1024px) / 1000);
   text-align: center;
   margin-top: 2rem;
 }
 
 #description {
-  font-size: 1.40rem;
+  font-size: calc(1.40rem + (100vw - 1024px) / 1000);
   text-align: center;
 }
 
@@ -71,6 +73,30 @@ body {
   background-color: var(--form-deep-blue);
   padding: 2.5rem;
   width: 65vw;
+}
+
+@media screen and (max-width:650px) {
+  #survey-form {
+    width: 75vw;
+  }
+}
+
+@media screen and (max-width:500px) {
+  #survey-form {
+    width: 85vw;
+  }
+}
+
+@media screen and (max-width:400px) {
+  #survey-form {
+    width: 90vw;
+  }
+}
+
+@media screen and (max-width:330px) {
+  #survey-form {
+    width: 100vw;
+  }
 }
 
 .form-item {
@@ -94,19 +120,20 @@ body {
 #favorite-form p,
 #prefer-form p,
 #comments-box p {
-  font-size: 1.40rem;
+  font-size: calc(1.40rem + (100vw - 1024px) / 1000);
 }
+
 
 #survey-form input,
 #dropdown,
 #comments,
 .submit-button {
-  font-size: 1.25rem;
+  font-size: calc(1.25rem + (100vw - 1024px) / 1000);
   font-family: 'Poppins', sans-serif;
 }
 
 .tips {
-  font-size: 1.125rem;
+  font-size: calc(1.125rem + (100vw - 1024px) / 1000);
 }
 
 #recommend {
